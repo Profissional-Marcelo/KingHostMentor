@@ -1,6 +1,7 @@
 :root {
     --cor3: #c8c8c8;
     --cor4: gray;
+    --cor2: #555555;
     --cor5: #782DC8; 
 }
 
@@ -9,6 +10,7 @@
     padding: 0px;
     text-decoration: none;
     font-size: 1em;
+    border: none;
 }
 
 body {
@@ -38,16 +40,36 @@ nav a{
     border-radius: 5px;
 }
 
-nav a:hover{
+nav button {
+    border-radius: 5px;
+    transition-duration: .2s;
+    padding: 8px;
+    color: white;
+    background-color: var(--cor3);
+    font-weight: bold;
+}
+
+nav > a {
+    display: inline;
+}
+
+
+nav > a:hover{
     text-decoration: underline;
     background-color: var(--cor4);
+}
+
+nav > button:hover{
+    
+        text-decoration: underline;
+        background-color: var(--cor4);
 }
 
 nav #ligar::before{
     content: '\1F518\00A0\00A0';
 }
 
-nav #dominio::before{
+nav .dominio::before{
     content: '\2714\00A0\00A0';
 }
 
@@ -67,12 +89,48 @@ nav #recursos::before{
     content: '\01F9F0\00A0\00A0';
 }
 
+.rpmenu{
+    display: none;
+}
+
+
+
+div.menu{
+    display: inline-block;
+    color: white;
+    background-color: var(--cor2);
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+}
+
+div.menu > p {
+    margin: 0px;
+    display: inline;
+}
+
+div.menu > a {
+    margin: 0px;
+    font-size: 10px;
+}
+
+div.menu > a:hover {
+    text-decoration: underline;
+}
+
+
+
+
 main div > iframe{
+    margin: 20px;
     position: absolute;
     top: 5%;
     left: 20%;
     width: 60vw;
     height: 90vh;
+    z-index: 0;
 }
 
 main iframe {

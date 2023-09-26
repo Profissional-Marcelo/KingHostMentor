@@ -12,3 +12,16 @@ function iniciar() {
     window.open('https://owa.exchangehosting.com.br/owa/auth/logon.aspx?url=https%3a%2f%2fowa.exchangehosting.com.br%2fowa%2f&reason=0')
     window.open('https://intranet.kinghost.com.br/')
 }
+
+    let botao = window.document.getElementById('botaomenu');
+    botao.addEventListener('click', clicar)
+
+    function clicar(){
+        let menu = window.document.getElementById('resmenu');
+        if (menu.style.display === 'inline-block') {
+            menu.style.display = 'none'; // Fecha a barra de menu
+        } else {
+            menu.style.display = 'inline-block'; // Abre a barra de menu
+        }
+        
+    }
