@@ -69,15 +69,15 @@ nav #ligar::before{
     content: '\1F518\00A0\00A0';
 }
 
-nav .dominio::before{
+nav #dominio-button::before{
     content: '\2714\00A0\00A0';
 }
 
-nav #email::before{
+nav #email-button::before{
     content: '\2709\00A0\00A0';
 }
 
-nav #intranet::before{
+nav #intranet-button::before{
     content: '\1F451\00A0\00A0';
 }
 
@@ -98,6 +98,7 @@ nav #recursos::before{
 div.menu{
     display: inline-block;
     color: white;
+    border: solid 1px var(--cor3);
     background-color: var(--cor2);
     font-size: 1em;
     text-decoration: none;

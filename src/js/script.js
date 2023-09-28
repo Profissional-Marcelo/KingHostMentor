@@ -13,15 +13,51 @@ function iniciar() {
     window.open('https://intranet.kinghost.com.br/')
 }
 
-    let botao = window.document.getElementById('botaomenu');
-    botao.addEventListener('click', clicar)
+    let botao = window.document.getElementById('dominio-button');
+    botao.addEventListener('click', abrirDominio)
 
-    function clicar(){
-        let menu = window.document.getElementById('resmenu');
+    function abrirDominio(){
+        fecharOutrosMenus('dominio-resmenu');
+        let menu = window.document.getElementById('dominio-resmenu');
         if (menu.style.display === 'inline-block') {
             menu.style.display = 'none'; // Fecha a barra de menu
         } else {
             menu.style.display = 'inline-block'; // Abre a barra de menu
         }
         
+    }
+
+    let emailButton = document.getElementById('email-button');
+    emailButton.addEventListener('click', abrirEmail);
+
+    function abrirEmail() {
+        fecharOutrosMenus('email-resmenu'); // Fecha outros menus
+        let menu = document.getElementById('email-resmenu');
+        if (menu.style.display === 'inline-block') {
+            menu.style.display = 'none'; // Fecha o menu
+        } else {
+            menu.style.display = 'inline-block'; // Abre o menu
+        }
+    }
+    
+    let intranetButton = document.getElementById('intranet-button');
+    intranetButton.addEventListener('click', abrirIntranet);
+
+    function abrirIntranet() {
+        fecharOutrosMenus('intranet-resmenu'); // Fecha outros menus
+        let menu = document.getElementById('intranet-resmenu');
+        if (menu.style.display === 'inline-block') {
+            menu.style.display = 'none'; // Fecha o menu
+        } else {
+            menu.style.display = 'inline-block'; // Abre o menu
+        }
+    }
+
+    function fecharOutrosMenus(excecaoMenuId) {
+        let menus = document.querySelectorAll('.rpmenu');
+        menus.forEach(function (menu) {
+            if (menu.id !== excecaoMenuId) {
+                menu.style.display = 'none'; // Fecha o menu
+            }
+        });
     }
