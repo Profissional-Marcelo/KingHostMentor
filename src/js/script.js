@@ -53,6 +53,32 @@ function iniciar() {
         }
     }
 
+    let encurtadorButton = document.getElementById('encurtador-button');
+    encurtadorButton.addEventListener('click', abrirEncurtador);
+
+    function abrirEncurtador() {
+        fecharOutrosMenus('encurtador-resmenu'); // Fecha outros menus
+        let menu = document.getElementById('encurtador-resmenu');
+        if (menu.style.display === 'inline-block') {
+            menu.style.display = 'none'; // Fecha o menu
+        } else {
+            menu.style.display = 'inline-block'; // Abre o menu
+        }
+    }
+
+    let redeButton = document.getElementById('rede-button');
+    encurtadorButton.addEventListener('click', abrirRede);
+
+    function abrirRede() {
+        fecharOutrosMenus('rede-resmenu'); // Fecha outros menus
+        let menu = document.getElementById('rede-resmenu');
+        if (menu.style.display === 'inline-block') {
+            menu.style.display = 'none'; // Fecha o menu
+        } else {
+            menu.style.display = 'inline-block'; // Abre o menu
+        }
+    }
+
     function fecharOutrosMenus(excecaoMenuId) {
         let menus = document.querySelectorAll('.rpmenu');
         menus.forEach(function (menu) {

@@ -1,86 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Host Mentor</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" target="_blank" id="ligar" onclick="iniciar()">Iniciar</a>
+
 
             <button class="dominio" id="dominio-button">Domínio</button>
             <span class="rpmenu" id="dominio-resmenu">
-               
-               
-                
-                <div class="menu">  
-                  <p>Whois Internacional</p>
-                  <a href="https://www.whois.com/whois/" target="frame">iframe</a>
-                  <a href="https://www.whois.com/whois/" target="_blank">externo</a><br>
-                  <p style="margin-right: 110px;">Registro BR</p>
-                  <a href="https://registro.br/tecnologia/ferramentas/whois/" target="_blank">externo</a><br>
-                  <p style="margin-right: 50px;">DNS Lookup</p>
-                  <a href="https://www.nslookup.io/" target="frame">iframe</a>
-                  <a href="https://www.nslookup.io/" target="_blank">externo</a><br>
-                  
-               
+
+
+
+                <div class="menu" id="menu-dominio">
+                    <p>Whois Internacional</p>
+                    <a href="https://www.whois.com/whois/" target="frame">iframe</a>
+                    <a href="https://www.whois.com/whois/" target="_blank">externo</a><br>
+                    <p>Registro BR</p>
+                    <a style="margin-left: 82px;" href="https://registro.br/tecnologia/ferramentas/whois/" target="_blank">externo</a><br>
+                    <p>DNS Lookup</p>
+                    <a style="margin-left: 50px;" href="https://www.nslookup.io/" target="frame">iframe</a>
+                    <a href="https://www.nslookup.io/" target="_blank">externo</a><br>
+
+
                 </div>
-            
-            </span> 
+
+            </span>
 
             <button class="menu-button" id="email-button">Email</button>
             <span class="rpmenu" id="email-resmenu">
-                <div class="menu">  
-                    <p style="margin-right: 74px;">Block List</p>
+                <div class="menu" id="menu-email">
+                    <p>Block List</p>
                     <a href="https://mxtoolbox.com/blacklists.aspx" target="frame">iframe</a>
-                    <a href="https://mxtoolbox.com/blacklists.aspx" target="_blank">externo</a><br>
-                    <p style="margin-right: 117px;">Terra email</p>
-                    <a href="https://mail.terra.com.br/" target="_blank">externo</a><br>
-                    <p style="margin-right: 131px;">Bol email</p>
-                    <a href="https://conta.uol.com.br/login?t=bol&env=visitante&dest=https://bmail.uol.com.br/login/check_session" target="_blank">externo</a><br>
-                    <p style="margin-right: 113px;">Gmail email</p>
-                    <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&ec=GAlASw&hl=pt_BR&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-854889320%3A1695866776372903&theme=glif" target="_blank">externo</a><br>
-                    <p style="margin-right: 100px;">Outlook email</p>
-                    <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=16&ct=1695866899&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f0%2f%3fnlp%3d1%26state%3d1%26redirectTo%3daHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC9pbmJveC8%26RpsCsrfState%3d56e7a0e4-b2d1-65d9-b530-b72a0ae903e2&id=292841&aadredir=1&whr=hotmail.com&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015" target="_blank">externo</a><br>
-                    <p style="margin-right: 107px;">Yahoo email</p>
-                    <a href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=pt-BR&.intl=br&.done=https%3A%2F%2Fmail.yahoo.com%2Fd" target="_blank">externo</a><br>
-                
-                  </div>
+                    <a href="https://mxtoolbox.com/blacklists.aspx" target="_blank">externo</a>
+                    <p>Terra email</p>
+                    <a style="margin-left: 24px;" href="https://mail.terra.com.br/" target="_blank">externo</a>
+                    <p>Bol email</p>
+                    <a style="margin-left: 37px;" href="https://conta.uol.com.br/login?t=bol&env=visitante&dest=https://bmail.uol.com.br/login/check_session"
+                        target="_blank">externo</a>
+                    <p>Gmail email</p>
+                    <a style="margin-left: 18px;" href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&ec=GAlASw&hl=pt_BR&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-854889320%3A1695866776372903&theme=glif"
+                        target="_blank">externo</a>
+                    <p>Outlook email</p>
+                    <a style="margin-left: 4px;" href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=16&ct=1695866899&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f0%2f%3fnlp%3d1%26state%3d1%26redirectTo%3daHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC9pbmJveC8%26RpsCsrfState%3d56e7a0e4-b2d1-65d9-b530-b72a0ae903e2&id=292841&aadredir=1&whr=hotmail.com&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015"
+                        target="_blank">externo</a>
+                    <p>Yahoo email</p>
+                    <a style="margin-left: 13px;" href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=pt-BR&.intl=br&.done=https%3A%2F%2Fmail.yahoo.com%2Fd"
+                        target="_blank">externo</a>
+
+                </div>
             </span>
-            
+
             <button class="menu-button" id="intranet-button">Intranet</button>
             <span class="rpmenu" id="intranet-resmenu">
-                <div class="menu">  
-                    <p style="margin-right: 151px;">Busca</p>
-                    <a href="https://intranet.kinghost.com.br:56001/kinghost.cgi" target="_blank">externo</a><br>
-                    <p style="margin-right: 151px;">Home</p>
-                    <a href="https://intranet.kinghost.com.br:56001/" target="_blank">externo</a><br>
-                    <p style="margin-right: 170px;">Fila</p>
-                    <a href="https://intranet.kinghost.com.br:56001/gerencia.queue.php" target="_blank">externo</a><br>
-                    <p style="margin-right: 150px;">Pré-ID</p>
-                    <a href="https://intranet.kinghost.com.br/kinghost.cgi?ficha=PREENCHAAQUI" target="_blank">externo</a><br>
-                  </div>
+                <div class="menu" id="menu-intranet">
+                    <p>Busca</p>
+                    <a href="https://intranet.kinghost.com.br:56001/kinghost.cgi" target="_blank">externo</a>
+                    <p>Home</p>
+                    <a href="https://intranet.kinghost.com.br:56001/" target="_blank">externo</a>
+                    <p>Fila</p>
+                    <a style="margin-left: 20px;" href="https://intranet.kinghost.com.br:56001/gerencia.queue.php" target="_blank">externo</a><br>
+                    <p>Pré-ID</p>
+                    <a href="https://intranet.kinghost.com.br/kinghost.cgi?ficha=PREENCHAAQUI"
+                        target="_blank">externo</a><br>
+                </div>
             </span>
-            <a href="#" target="frame" id="encurtador">Encurtador</a>
-           <a href="#" id="recursos" target="_blank" onclick="abrirRecursos()">Abrir Recursos</a>
+            <button class="menu-button" id="encurtador-button">Encurtador</button>
+            <span class="rpmenu" id="encurtador-resmenu">
+                <div class="menu" id="menu-encurtador">
+                    <p id="ligar"></p>
+                    <a  href="#" target="_blank" onclick="iniciar()">Iniciar</a><br>
+                    <p id="recursos"></p>
+                    <a href="#"  target="_blank" onclick="abrirRecursos()">Abrir Recursos</a>
+                </div>
+            </span>
+
+            <button class="menu-button" id="rede-button">Rede</button>
+            <span class="rpmenu" id="rede-resmenu">
+                <div class="menu" id="menu-rede">
+                    <p id="ligar"></p>
+                    <a href="#" target="_blank" onclick="iniciar()">Iniciar</a><br>
+                    <p id="recursos"></p>
+                    <a href="#"  target="_blank" onclick="abrirRecursos()">Abrir Recursos</a>
+                </div>
+            </span>
         </nav>
     </header>
-    
+
     <main>
 
-        <section>
-            <div>
-              <iframe name="frame" frameborder="1">
-                Serviço incompatível
-              </iframe>
-            </div>
-        </section>
-        <section class="section-mapa">
+        <section id="section-iframe">
             
+                <iframe name="frame" frameborder="1">
+                    Serviço incompatível
+                </iframe>
+
+        </section>
+        <section id="section-mapa">
         </section>
     </main>
     <footer>
@@ -88,4 +110,5 @@
     </footer>
     <script src="src/js/script.js"></script>
 </body>
+
 </html>
