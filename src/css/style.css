@@ -1,175 +1,127 @@
-:root {
-    --cor3: #c8c8c8;
-    --cor4: gray;
-    --cor2: #555555;
-    --cor5: #782DC8; 
+@charset "UTF-8";
+
+:root{
+    --bgMenu: #c8c8c8;
+    --bgSubMenu: darkgray;
+    --bgTripleMenu: rgb(71, 71, 71);
+    --bgHover: rgb(118,180,145);
+    --bodyColor: #782DC8;
+
+    --font-nome: sans-serif;
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
-    font-size: 1em;
-    border: none;
 }
 
 body {
-    background: var(--cor5) url(../img/khbg.png) center center no-repeat fixed;
+    background: var(--bodyColor) url(../img/khbg.png) center center no-repeat fixed;
     background-size: auto;
     min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    min-height: 50px;
-    background-color: var(--cor3);
-    
-}
 
-nav {
-    padding: 10px;
+nav.dropdownMenu > ul{
+    list-style: none;
+    background-color: var(--bgMenu);
+    display: flex;
     text-align: center;
+    justify-content: center;
 }
 
-nav a{
-    margin: 10px;
-    color: white;
-    font-weight: bold;
-    transition-duration: .2s;
+nav.dropdownMenu > ul > li{
+    position: relative;
+    margin: 0px 10px;
+}
+
+nav.dropdownMenu > ul > li > button{
     padding: 10px;
-    border-radius: 5px;
-}
-
-nav button {
-    border-radius: 5px;
-    transition-duration: .2s;
-    padding: 8px;
+    background-color: transparent;
+    border: none;
     color: white;
-    background-color: var(--cor3);
-    font-weight: bold;
 }
 
-nav > a {
-    display: inline;
+nav.dropdownMenu > ul > li > button:hover{
+    background-color: var(--bgHover);
 }
 
-
-nav > a:hover{
-    text-decoration: underline;
-    background-color: var(--cor4);
-}
-
-
-nav > button:hover{
-    
-        text-decoration: underline;
-        background-color: var(--cor4);
-}
-
-nav #ligar::before{
-    content: '\1F518';
-}
-
-nav #dominio-button::before{
+nav.dropdownMenu > ul > li > button#btnDominio::before{
     content: '\2714\00A0\00A0';
 }
 
-nav #email-button::before{
+nav.dropdownMenu > ul > li > button#btnEmail::before{
     content: '\2709\00A0\00A0';
 }
 
-nav #rede-button::before{
+nav.dropdownMenu > ul > li > button#btnRede::before{
     content: '\01F310\00A0\00A0';
 }
 
-#menu-email{
-    left: -86px;
-    top: 30px;
-    width: 145px;
-    text-align: start;
-}
-
-#menu-intranet{
-    left: -108px;
-    top: 30px;
-    width: 87px;
-    text-align: start;
-}
-
-
-#menu-dominio{
-    left: -108px;
-    top: 30px;
-    width: 216px;
-    text-align: start;
-}
-
-#menu-encurtador{
-    left: -135px;
-    top: 30px;
-    width: 100px;
-    text-align: start;
-}
-
-#menu-encurtador > p {
-    text-align: start;
-}
-
-#menu-encurtador > a {
-    text-align: end;
-}
-
-nav #intranet-button::before{
+nav.dropdownMenu > ul > li > button#btnInfranet::before{
     content: '\1F451\00A0\00A0';
 }
 
-nav #encurtador-button::before{
+nav.dropdownMenu > ul > li > button#btnEncurtador::before{
     content: '\1F517\00A0\00A0';
 }
 
-nav #recursos::before{
-    content: '\01F9F0';
-}
-
-.rpmenu{
+nav.dropdownMenu > ul > li > ul{
     display: none;
-    position: absolute; 
-}
-
-
-
-div.menu{
-    display: absolute;
-    color: white;
-    border: solid 1px var(--cor3);
-    background-color: var(--cor2);
-    font-size: 1em;
-    text-decoration: none;
-    border-radius: 2px;
     position: absolute;
     z-index: 1;
-    /* width: 260px; */
+    list-style: none;
+    background-color: var(--bgSubMenu);
+    border: black 1px solid;
 }
 
-div.menu > p {
-    margin: 0px;
-    display: inline;
+nav.dropdownMenu > ul > li > ul> li{
+    width: 150px; 
 }
 
-div.menu > a {
-    margin: 0px;
-    font-size: 10px;
-    padding: 0px;
+nav.dropdownMenu > ul > li > ul> li > button{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition-duration: 0.1s;
+}
+
+nav.dropdownMenu > ul > li > ul> li > a{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition-duration: 0.1s;
+}
+
+nav.dropdownMenu > ul > li > ul> li > button:hover{
+    color: var(--bgTripleMenu);
+}
+
+nav.dropdownMenu > ul > li > ul> li > ul{
+    list-style: none;
+    display: none;
+    background-color: var(--bgTripleMenu);
 }
 
 
-div.menu > a:hover {
+nav.dropdownMenu > ul > li > ul> li > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav.dropdownMenu > ul > li > ul> li > ul > li > a:hover{
+    color: white;
     text-decoration: underline;
+    font-size: 12px;
 }
 
-
-
-main section#section-iframe > iframe{
+main > section#section-iframe > iframe {
     margin: 20px;
     position: absolute;
     top: 5%;
@@ -177,11 +129,8 @@ main section#section-iframe > iframe{
     width: 60vw;
     height: 90vh;
     z-index: 0;
-}
-
-main iframe {
     border: solid black 2px;
     background: white url(../img/khiframe.png) center center no-repeat local;
-    
 }
+
 
