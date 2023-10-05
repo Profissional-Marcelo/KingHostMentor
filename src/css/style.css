@@ -4,7 +4,7 @@
     --bgMenu: #c8c8c8;
     --bgSubMenu: darkgray;
     --bgTripleMenu: rgb(71, 71, 71);
-    --bgHover: rgb(118,180,145);
+    --bgHover: #9391ff;
     --bodyColor: #782DC8;
 
     --font-nome: sans-serif;
@@ -45,6 +45,7 @@ nav.dropdownMenu > ul > li > button{
 
 nav.dropdownMenu > ul > li > button:hover{
     background-color: var(--bgHover);
+    border-radius: 10px;
 }
 
 nav.dropdownMenu > ul > li > button#btnDominio::before{
@@ -59,12 +60,16 @@ nav.dropdownMenu > ul > li > button#btnRede::before{
     content: '\01F310\00A0\00A0';
 }
 
-nav.dropdownMenu > ul > li > button#btnInfranet::before{
+nav.dropdownMenu > ul > li > button#btnIntranet::before{
     content: '\1F451\00A0\00A0';
 }
 
 nav.dropdownMenu > ul > li > button#btnEncurtador::before{
     content: '\1F517\00A0\00A0';
+}
+
+nav.dropdownMenu > ul > li > button#btnVideos::before{
+    content: '\1F3A5\00A0\00A0';
 }
 
 nav.dropdownMenu > ul > li > ul{
@@ -96,6 +101,13 @@ nav.dropdownMenu > ul > li > ul> li > a{
     height: 100%;
     color: white;
     transition-duration: 0.1s;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav.dropdownMenu > ul > li > ul> li > a:hover{
+    text-decoration: underline;
+    color: var(--bgTripleMenu);
 }
 
 nav.dropdownMenu > ul > li > ul> li > button:hover{

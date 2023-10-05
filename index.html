@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina inicial</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css" media="all">
     <link rel="stylesheet" href="../../Assets/Css/homeMQ.css">
 </head>
@@ -85,8 +85,8 @@
                     </ul>
                 </li>
                 <li>
-                    <button id="btnInfranet">Infranet</button>
-                    <ul id="menuInfranet" >
+                    <button id="btnIntranet">Intranet</button>
+                    <ul id="menuIntranet" >
                         <li>
                             Busca
                         </li>
@@ -113,6 +113,19 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <button id="btnVideos">Vídeos</button>
+                    <ul id="menuVideos" class="">
+                        <li>
+                            <button id="btnVideoUm">Vídeo 1</button>
+                            <ul id="menuVideoUm" class="">
+                                <li><a href="" target="frame">iframe</a></li>
+                                <li><a href="">Externo</a></li>
+                            </ul>
+        
+        
+                        </li>
+                </li>
             </ul>
         </nav>
     </header>
@@ -120,118 +133,21 @@
         <section id="section-iframe">
             <iframe name="frame" frameborder="1"></iframe>
         </section>
+        <section id="section-video">
+
+        </section>
+        <section id="section-passos">
+
+        </section>
+        <section id="section-mapa">
+
+        </section>
     </main>
-
+    <footer>
+            
+    </footer>
     <script src="src/js/jquery.js"></script>
-    <script>
-        //MENU PRINCIPAL
-
-        $("#btnDominio").click(()=>{
-            $("#menuEmail").hide();
-            $("#menuInfranet").hide();
-            $("#menuEncurtador").hide();
-            $("#menuRede").hide();
-            $("#menuDominio").toggle();
-        });
-        
-        $("#btnEmail").click(()=>{
-            $("#menuDominio").hide();
-            $("#menuInfranet").hide();
-            $("#menuEncurtador").hide();
-            $("#menuRede").hide();
-            $("#menuEmail").toggle();
-        });
-        
-        $("#btnInfranet").click(()=>{
-            $("#menuEmail").hide();
-            $("#menuDominio").hide();
-            $("#menuEncurtador").hide();
-            $("#menuRede").hide();
-            $("#menuInfranet").toggle();
-        });
-        
-        $("#btnEncurtador").click(()=>{
-            $("#menuEmail").hide();
-            $("#menuDominio").hide();
-            $("#menuInfranet").hide();
-            $("#menuRede").hide();
-            $("#menuEncurtador").toggle();
-        });
-
-        $("#btnRede").click(()=>{
-            $("#menuEmail").hide();
-            $("#menuDominio").hide();
-            $("#menuInfranet").hide();
-            $("#menuEncurtador").hide();
-            $("#menuRede").toggle();
-        });
-
-        //SUBMENU
-
-        //DOMINIO
-        $("#btnWhois").click(()=>{
-            $("#menuRegistro").hide();
-            $("#menuDns").hide();
-            $("#menuWhois").toggle();
-        });
-
-        $("#btnDns").click(()=>{
-            $("#menuRegistro").hide();
-            $("#menuWhois").hide();
-            $("#menuDns").toggle();
-        });
-
-        $("#btnRegistro").click(()=>{
-            $("#menuDns").hide();
-            $("#menuWhois").hide();
-            $("#menuRegistro").toggle();
-        });
-
-        //E-MAIL
-        $("#btnBlock").click(()=>{
-            $("#menuBol").hide();
-            $("#menuGmail").hide();
-            $("#menuOutlook").hide();
-            $("#menuYahoo").hide();
-            $("#menuBlock").toggle();
-        });
-
-        $("#btnBol").click(()=>{
-            $("#menuBlock").hide();
-            $("#menuGmail").hide();
-            $("#menuOutlook").hide();
-            $("#menuYahoo").hide();
-            $("#menuBol").toggle();
-        });
-
-        $("#btnGmail").click(()=>{
-            $("#menuBlock").hide();
-            $("#menuBol").hide();
-            $("#menuOutlook").hide();
-            $("#menuYahoo").hide();
-            $("#menuGmail").toggle();
-        });
-
-        $("#btnOutlook").click(()=>{
-            $("#menuBlock").hide();
-            $("#menuBol").hide();
-            $("#menuGmail").hide();
-            $("#menuYahoo").hide();
-            $("#menuOutlook").toggle();
-        });
-
-        $("#btnYahoo").click(()=>{
-            $("#menuBlock").hide();
-            $("#menuBol").hide();
-            $("#menuGmail").hide();
-            $("#menuOutlook").hide();
-            $("#menuYahoo").toggle();
-        });
-
-
-
-
-
+    <script src="src/js/script.js"></script>
     </script>
 </body>
 
