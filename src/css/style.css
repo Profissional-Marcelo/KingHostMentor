@@ -23,6 +23,15 @@ body {
 }
 
 
+.sigla{
+    font-size: 10px;
+}
+
+.externo::after{
+    content: '\00A0\1F4CC';
+}
+
+
 nav.dropdownMenu > ul{
     list-style: none;
     background-color: var(--bgMenu);
@@ -41,6 +50,7 @@ nav.dropdownMenu > ul > li > button{
     background-color: transparent;
     border: none;
     color: white;
+    font-weight: bold;
 }
 
 nav.dropdownMenu > ul > li > button:hover{
