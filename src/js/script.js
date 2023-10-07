@@ -108,5 +108,18 @@ $("#btnProxy").click(()=>{
 })
 //Youtube
 $("#btnVideoUm").click(()=>{
+    $("#menuVideoDois").hide();
     $("#menuVideoUm").toggle();
 });
+
+$("#btnVideoDois").click(()=>{
+    $("#menuVideoUm").hide();
+    $("#menuVideoDois").toggle();
+});
+
+//Abrir iframe nos vídeos
+$(".iframeVideo").click(()=>{
+    $("#section-video").toggle();
+})
+
+$()

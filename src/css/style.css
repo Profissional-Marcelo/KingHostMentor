@@ -143,16 +143,52 @@ nav.dropdownMenu > ul > li > ul> li > ul > li > a:hover{
     font-size: 12px;
 }
 
-main > section#section-iframe > iframe {
-    margin: 20px;
-    position: absolute;
-    top: 5%;
-    left: 20%;
-    width: 60vw;
-    height: 90vh;
-    z-index: 0;
-    border: solid black 2px;
-    background: white url(../img/khiframe.png) center center no-repeat local;
+main > section#section-iframe{
+    position: relative;
+    margin: 20px auto 0px auto;
+    min-width: 100px;
+    max-width: 1000px;
+    min-height: 100px;
+    height: 800px;
+    background-color: white;
+
 }
 
+main > section#section-iframe > iframe {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    z-index: 0;
+    background: white url(../img/khiframe.png) center center no-repeat local;
+    box-shadow: 6px 6px 16px rgb(13, 13, 13, 0.616);
+    border: 4px solid var(--bgHover);
+}  
+
+
+
+
+
+main > section#section-video {
+    display: none;
+    
+}
+
+main > section#section-video {
+    position: relative;
+    min-width: 100px;
+    max-width: 1000px;
+    height: 50vh;
+    background-color: rgb(187, 175, 255);
+    margin: auto;
+    box-shadow: 6px 6px 16px rgb(13, 13, 13, 0.616);
+}
+
+ main > section#section-video > iframe {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 75%;
+} 
 
