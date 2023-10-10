@@ -143,6 +143,13 @@ nav.dropdownMenu > ul > li > ul> li > ul > li > a:hover{
     font-size: 12px;
 }
 
+main > section > button > .console{
+    width: 100px;
+    position: fixed;
+    top: 85%;
+    left: 92%;
+}
+
 main > section#section-iframe{
     position: relative;
     margin: 20px auto 0px auto;
@@ -167,7 +174,35 @@ main > section#section-iframe > iframe {
 
 
 
+main > section > ul#menuQuiz {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 75%;
+    z-index: 1;
+    list-style: none;
+    border: rgb(0, 0, 0) 1px solid;
+}
 
+main > section > ul > article.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+dialog::ul#menuQuiz {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.781);
+    border: black 1px solid;
+    
+}
 
 main > section#section-video {
     display: none;

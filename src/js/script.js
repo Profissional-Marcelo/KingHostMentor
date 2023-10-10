@@ -122,4 +122,9 @@ $(".iframeVideo").click(()=>{
     $("#section-video").toggle();
 })
 
-$()
+//GameQuiz
+
+$("#btnGameQuiz").click(()=>{
+    $("#menuQuiz").toggle();
+    $("body").css.style(background)
+});
