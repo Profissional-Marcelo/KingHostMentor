@@ -183,7 +183,6 @@ main > section > ul#menuQuiz {
     height: 75%;
     z-index: 1;
     list-style: none;
-    border: rgb(0, 0, 0) 1px solid;
 }
 
 main > section > ul > article.container{
