@@ -27,7 +27,16 @@ body {
 }
 
 .console {
+    box-sizing: border-box;
     box-shadow:  6px 6px 16px rgb(13, 13, 13, 0.616);
+    border-radius: 50px;
+}
+
+.console:hover {
+    border: 2px solid rgba(255, 255, 255, 0.700);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.622);
+    transition: transform 0.3s border 0.5s; 
 }
 
 .sigla{
