@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/*TABLET*/
+    :root{
+        --bgMenu: #c8c8c8;
+        --bgSubMenu: darkgray;
+        --bgTripleMenu: rgb(71, 71, 71);
+        --bgHover: #9391ff;
+        --bodyColor: #782DC8;
+    
+        --font-nome: sans-serif;
+    }
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    
+    body {
+        background: var(--bodyColor) url(../img/khbg.png) center center no-repeat fixed;
+        background-size: auto;
+        min-height: 100vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    body .blur{
+        filter: blur(10px);
+    }
+    
+    nav .externo::after{
+        content: '\00A0\1F4CC';
+    }
+    
+    nav .sigla{
+        font-size: 15px;
+    }
+
+    
+    
+    nav.dropdownMenu > ul{
+        list-style: none;
+        background-color: var(--bgMenu);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    nav.dropdownMenu > ul > li{
+        position: relative;
+        margin: 0px 10px;
+    }
+    
+    nav.dropdownMenu > ul > li > button{
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    nav.dropdownMenu > ul > li > button:hover{
+        background-color: var(--bgHover);
+        border-radius: 10px;
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnDominio::before{
+        content: '\2714\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnEmail::before{
+        content: '\2709\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnRede::before{
+        content: '\01F310\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnIntranet::before{
+        content: '\1F451\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnEncurtador::before{
+        content: '\1F517\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnVideos::before{
+        content: '\1F3A5\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > ul{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        background-color: var(--bgSubMenu);
+        border: black 1px solid;
+        width: 250px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li{
+        width: 250px; 
+        text-align: center;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > button{
+        background-color: transparent;
+        border: none;
+        width: 250px;
+        height: 100%;
+        color: white;
+        transition-duration: 0.1s;
+        font-size: 20px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > a{
+        background-color: transparent;
+        border: none;
+        color: white;
+        transition-duration: 0.1s;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > a:hover{
+        text-decoration: underline;
+        color: var(--bgTripleMenu);
+    }
+    
+    
+    
+    nav.dropdownMenu > ul > li > ul> li > button:hover{
+        color: var(--bgTripleMenu);
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > ul{
+        list-style: none;
+        display: none;
+        background-color: var(--bgTripleMenu);
+    }
+    
+    
+    nav.dropdownMenu > ul > li > ul> li > ul > li > a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > ul > li > a:hover{
+        color: white;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    
+    main > section#section-iframe{
+        position: relative;
+        margin: 20px auto 0px auto;
+        min-width: 100px;
+        max-width: 1000px;
+        min-height: 100px;
+        height: 800px;
+        background-color: white;
+    
+    }
+    
+    main > section#section-iframe > iframe {
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        margin: auto;
+        z-index: 0;
+        background: white url(../img/khiframe.png) center center no-repeat local;
+        box-shadow: 6px 6px 16px rgb(13, 13, 13, 0.616);
+        border: 4px solid var(--bgHover);
+    }  
+    
+    
+    
+    main > section > ul#menuQuiz {
+        display: none;
+        position: fixed;
+        top: 15%;
+        left: 10%;
+        width: 50%;
+        height: 75%;
+        z-index: 1;
+        list-style: none;
+    }
+    
+    main > section > ul > article.container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    dialog::ul#menuQuiz {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.781);
+        border: black 1px solid;
+        
+    }
+    
+    main > section#section-video {
+        display: none;
+        
+    }
+    
+    main > section#section-video {
+        position: relative;
+        min-width: 100px;
+        max-width: 1000px;
+        height: 50vh;
+        background-color: rgb(187, 175, 255);
+        margin: 0px auto;
+        box-shadow: 6px 6px 16px rgb(13, 13, 13, 0.616);
+    }
+    
+     main > section#section-video > iframe {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        width: 50%;
+        height: 75%;
+    } 
+    
+    main > section > button > img.console {
+        box-sizing: border-box;
+        box-shadow:  6px 6px 16px rgb(13, 13, 13, 0.616);
+        border-radius: 50px;
+        z-index: 3;
+        width: 100px;
+        position: fixed;
+        top: 85%;
+        left: 80%;
+    }
+    
+    
+}
+
+@media screen and (min-width: 992px) {/*PC*/
+
+    :root{
+        --bgMenu: #c8c8c8;
+        --bgSubMenu: darkgray;
+        --bgTripleMenu: rgb(71, 71, 71);
+        --bgHover: #9391ff;
+        --bodyColor: #782DC8;
+    
+        --font-nome: sans-serif;
+    }
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background: var(--bodyColor) url(../img/khbg.png) center center no-repeat fixed;
+        background-size: auto;
+        min-height: 100vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    body .blur{
+        filter: blur(10px);
+    }
+    
+    nav .externo::after{
+        content: '\00A0\1F4CC';
+    }
+    
+    nav .sigla{
+        font-size: 15px;
+    }
+    
+    nav.dropdownMenu > ul{
+        list-style: none;
+        background-color: var(--bgMenu);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    nav.dropdownMenu > ul > li{
+        position: relative;
+        margin: 0px 10px;
+    }
+    
+    nav.dropdownMenu > ul > li > button{
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    nav.dropdownMenu > ul > li > button:hover{
+        background-color: var(--bgHover);
+        border-radius: 10px;
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnDominio::before{
+        content: '\2714\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnEmail::before{
+        content: '\2709\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnRede::before{
+        content: '\01F310\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnIntranet::before{
+        content: '\1F451\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnEncurtador::before{
+        content: '\1F517\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > button#btnVideos::before{
+        content: '\1F3A5\00A0\00A0';
+    }
+    
+    nav.dropdownMenu > ul > li > ul{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        background-color: var(--bgSubMenu);
+        border: black 1px solid;
+        width: 250px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li{
+        width: 250px; 
+        text-align: center;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > button{
+        background-color: transparent;
+        border: none;
+        width: 250px;
+        height: 100%;
+        color: white;
+        transition-duration: 0.1s;
+        font-size: 20px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > a{
+        background-color: transparent;
+        border: none;
+        color: white;
+        transition-duration: 0.1s;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > a:hover{
+        text-decoration: underline;
+        color: var(--bgTripleMenu);
+    }
+    
+    
+    
+    nav.dropdownMenu > ul > li > ul> li > button:hover{
+        color: var(--bgTripleMenu);
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > ul{
+        list-style: none;
+        display: none;
+        background-color: var(--bgTripleMenu);
+    }
+    
+    
+    nav.dropdownMenu > ul > li > ul> li > ul > li > a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    nav.dropdownMenu > ul > li > ul> li > ul > li > a:hover{
+        color: white;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+    
+    main > section#section-iframe{
+        position: relative;
+        margin: 20px auto 0px auto;
+        min-width: 100px;
+        max-width: 1000px;
+        min-height: 100px;
+        height: 800px;
+        background-color: white;
+    
+    }
+    
+    main > section#section-iframe > iframe {
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        margin: auto;
+        z-index: 0;
+        background: white url(../img/khiframe.png) center center no-repeat local;
+        box-shadow: 6px 6px 16px rgb(13, 13, 13, 0.616);
+        border: 4px solid var(--bgHover);
+    }  
+    
+    
+    
+    main > section > ul#menuQuiz {
+        display: none;
+        position: fixed;
+        top: 15%;
+        left: 25%;
+        width: 50%;
+        height: 75%;
+        z-index: 1;
+        list-style: none;
+    }
+    
+    main > section > ul > article.container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    dialog::ul#menuQuiz {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.781);
+        border: black 1px solid;
+        
+    }
+    
+    main > section#section-video {
+        display: none;
+        
+    }
+    
+    main > section#section-video {
+        position: relative;
+        min-width: 100px;
+        max-width: 1000px;
+        height: 50vh;
+        background-color: rgb(187, 175, 255);
+        margin: 0px auto;
+        box-shadow: 6px 6px 16px rgb(13, 13, 13, 0.616);
+    }
+    
+     main > section#section-video > iframe {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        width: 50%;
+        height: 75%;
+    } 
+    
+    main > section > button > img.console {
+        box-sizing: border-box;
+        box-shadow:  6px 6px 16px rgb(13, 13, 13, 0.616);
+        border-radius: 50px;
+        width: 100px;
+        position: fixed;
+        top: 85%;
+        left: 92%;
+        z-index: 2;
+    }
+    
+    main > section > button > img.console:hover {
+        border: 2px solid rgba(255, 255, 255, 0.700);
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.622);
+        transition: transform 0.3s border 0.5s; 
+    }
+
+
+}
