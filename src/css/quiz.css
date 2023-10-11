@@ -1,0 +1,52 @@
+body {
+    background-color: #412ab6;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main > section#plataforma {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+main > section > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #39055B, #20084F, #050C41);
+    border: white 2px solid;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+main > section > button {
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+main > section > button > p {
+ margin: 10px;
+ font-size: 15px;
+ padding: 20px; 
+ 
+}
+
+footer > a {
+ display: flex;
+ justify-content: center;   
+}
+
+footer > a > img{
+    width: 60px;
+    border-radius: 30px;
+    background-color: black;
+}

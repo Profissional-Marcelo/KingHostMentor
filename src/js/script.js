@@ -126,6 +126,10 @@ $(".iframeVideo").click(()=>{
 
 $("#btnGameQuiz").click(()=>{
     $("#menuQuiz").toggle();
-   criarBlur = document.getElementsByClassName(".blur");
-   criarBlur.style.proprety 
+    $("#menuUl").toggleClass("blur");
+    $("#section-iframe").toggleClass("blur");
+    $("#section-video").toggleClass("blur");
 });
+
+
+
