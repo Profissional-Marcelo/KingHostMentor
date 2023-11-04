@@ -36,9 +36,45 @@ header > span#burguer {
 }
 
 header > menu {
-    
+    display: none;
     position: absolute;
-    top: 10%;
+    width: 50vw;
+    top: 9%;
+}
+
+header > menu > ul {
+    background-color: rgb(246, 252, 253);
+}
+
+header > menu > ul > li > button {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--bgAbrirComo);
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--colorGreen);
+    padding: 10px;
+}
+
+header > menu > ul > li > ul {
+    background-color: rgb(200, 200, 200);
+    /* background-image: linear-gradient(to right, #FFF6AE, #FFABF7); */
+}
+
+header > menu > ul > li > ul > li > button, header > menu > ul > li > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    height: 40px;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    border: 1px solid var(--bgAbrirComo);
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--bgAbrirComo);
+    height: 100%;
 }
 
 header > span.botoesInforme {
@@ -57,13 +93,16 @@ header > span.botoesInforme > a {
 header > span.botoesInforme > a > span {
     position: relative;
     top: 15%;
-    color: black;
+    color: var(--colorGreen);
 }
 
 
 header > span.botoesInforme > a#entrar {
-    
     background-color: white;
     color: var(--colorGreen);
     border: 2px solid var(--colorGreen);
 }
+
+
+
+
