@@ -39,7 +39,7 @@ header > menu {
     display: none;
     position: absolute;
     width: 50vw;
-    top: 9%;
+    top: 60px;
 }
 
 header > menu > ul {
@@ -57,6 +57,7 @@ header > menu > ul > li > button {
 }
 
 header > menu > ul > li > ul {
+    display: none;
     background-color: rgb(200, 200, 200);
     /* background-image: linear-gradient(to right, #FFF6AE, #FFABF7); */
 }
@@ -73,7 +74,7 @@ header > menu > ul > li > ul > li > button, header > menu > ul > li > ul > li > 
     background-color: transparent;
     cursor: pointer;
     font-weight: bold;
-    color: var(--bgAbrirComo);
+    color: white;
     height: 100%;
 }
 
