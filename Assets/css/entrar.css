@@ -158,6 +158,11 @@ div#formulario > p {
     margin-bottom: 20px;
 }
 
+div#formulario > p > a {
+    font-weight: bold;
+  color: var(--lilas);
+  text-decoration: none;
+}
 
 
 form > input[type=submit] {
@@ -236,3 +241,4 @@ form > a.botao:hover {
 form > a.botao > span {
     font-size: 0.8em;
 }
+
