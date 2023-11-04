@@ -30,54 +30,6 @@ header {
     width: 100vw;
 }
 
-header > span#burguer {
-    color: white;
-    font-size: 40px;
-}
-
-header > menu {
-    display: none;
-    position: absolute;
-    width: 50vw;
-    top: 60px;
-}
-
-header > menu > ul {
-    background-color: rgb(246, 252, 253);
-}
-
-header > menu > ul > li > button {
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--bgAbrirComo);
-    width: 100%;
-    height: 40px;
-    border: 1px solid var(--colorGreen);
-    padding: 10px;
-}
-
-header > menu > ul > li > ul {
-    display: none;
-    background-color: rgb(200, 200, 200);
-    /* background-image: linear-gradient(to right, #FFF6AE, #FFABF7); */
-}
-
-header > menu > ul > li > ul > li > button, header > menu > ul > li > ul > li > a {
-    text-decoration: none;
-    font-size: 15px;
-    height: 40px;
-    display: block;
-    padding: 10px 0px;
-    text-align: center;
-    border: 1px solid var(--bgAbrirComo);
-    width: 100%;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    height: 100%;
-}
-
 header > span.botoesInforme {
     padding: 0px 10px 0px 10px;
 }
@@ -106,4 +58,104 @@ header > span.botoesInforme > a#entrar {
 
 
 
+header > span#burguer {
+    color: white;
+    font-size: 40px;
+}
 
+header > menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 50vw;
+    top: 60px;
+}
+
+header > menu > ul {
+    background-color: rgb(246, 252, 253);
+    border: 1px solid var(--colorGreen);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+header > menu > ul > li > button {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--bgAbrirComo);
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--colorGreen);
+    border-bottom: 0px;
+    padding: 10px;
+}
+
+header > menu > ul > li > ul {
+    display: none;
+    background-color: var(--bgSubMenu);
+}
+
+ header > menu > ul > li > ul > li > button, header > menu > ul > li > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    height: 40px;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    border: 1px solid lightgray;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    height: 100%;
+} 
+
+header > menu > ul > li > ul > li > a {
+    width: 99%;
+}
+
+header > menu > ul > li > ul > li > ul {
+    display: none;
+    background-color: rgb(56, 56, 56);
+} 
+
+header > menu > ul > li > ul > li > ul > li > a{
+    text-decoration: none;
+    font-size: 15px;
+    height: 40px;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+
+    cursor: pointer;
+    color: white;
+    height: 100%;
+} 
+
+main {
+    width: 97.6vw;
+}
+
+main > section#section-iframe{
+    
+    position: relative;
+    margin: 20px auto 0px auto;
+    border: 4px solid var(--bgHover);
+    overflow: hidden;
+    width: 100%;
+    height: 86vh;
+    background-color: white;
+}
+
+main > section#section-iframe > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: white url(../img/logoHM.png) center center no-repeat local;
+    background-size: contain;
+    box-shadow: 6px 6px 16px rgb(13, 13, 13, 0.616);
+    
+}  
