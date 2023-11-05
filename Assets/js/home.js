@@ -12,26 +12,29 @@ function clicar(){
 
 $("#btnDominio").click(()=>{
     $("#menuEmail").hide();
-    $("#menuInfranet").hide();
+    $("#menuIntranet").hide();
     $("#menuEncurtador").hide();
     $("#menuRede").hide();
+    $('#menuVideos').hide();
     $("#menuDominio").toggle();
 });
 
 $("#btnEmail").click(()=>{
     $("#menuDominio").hide();
-    $("#menuInfranet").hide();
+    $("#menuIntranet").hide();
     $("#menuEncurtador").hide();
     $("#menuRede").hide();
+    $('#menuVideos').hide();
     $("#menuEmail").toggle();
 });
 
-$("#btnInfranet").click(()=>{
+$("#btnIntranet").click(()=>{
     $("#menuEmail").hide();
     $("#menuDominio").hide();
     $("#menuEncurtador").hide();
     $("#menuRede").hide();
-    $("#menuInfranet").toggle();
+    $('#menuVideos').hide();
+    $("#menuIntranet").toggle();
 });
 
 $("#btnEncurtador").click(()=>{
@@ -39,75 +42,82 @@ $("#btnEncurtador").click(()=>{
     $("#menuDominio").hide();
     $("#menuIntranet").hide();
     $("#menuRede").hide();
+    $('#menuVideos').hide();
     $("#menuEncurtador").toggle();
 });
 
 $("#btnRede").click(()=>{
     $("#menuEmail").hide();
     $("#menuDominio").hide();
-    $("#menuInfranet").hide();
+    $("#menuIntranet").hide();
     $("#menuEncurtador").hide();
+    $('#menuVideos').hide();
     $("#menuRede").toggle();
 });
+
+$("#btnVideos").click(()=>{
+    $("#menuEmail").hide();
+    $('#menuDominio').hide();
+    $('#menuIntranet').hide();
+    $('#menuEncurtador').hide();
+    $('#menuRede').hide();
+    $('#menuVideos').toggle();
+});
+
 
 //SUBMENU
 
 //DOMINIO
 $("#btnWhois").click(()=>{
-    $("#menuRegistro").hide();
     $("#menuDns").hide();
     $("#menuWhois").toggle();
 });
 
 $("#btnDns").click(()=>{
-    $("#menuRegistro").hide();
     $("#menuWhois").hide();
     $("#menuDns").toggle();
 });
 
-$("#btnRegistro").click(()=>{
-    $("#menuDns").hide();
-    $("#menuWhois").hide();
-    $("#menuRegistro").toggle();
-});
-
 //E-MAIL
 $("#btnBlock").click(()=>{
-    $("#menuBol").hide();
-    $("#menuGmail").hide();
-    $("#menuOutlook").hide();
-    $("#menuYahoo").hide();
+    $("#menuMailsTest").hide();
     $("#menuBlock").toggle();
 });
 
-$("#btnBol").click(()=>{
+$("#btnMailsTest").click(()=>{
     $("#menuBlock").hide();
-    $("#menuGmail").hide();
-    $("#menuOutlook").hide();
-    $("#menuYahoo").hide();
-    $("#menuBol").toggle();
+    $("#menuMailsTest").toggle();
 });
 
-$("#btnGmail").click(()=>{
-    $("#menuBlock").hide();
-    $("#menuBol").hide();
-    $("#menuOutlook").hide();
-    $("#menuYahoo").hide();
-    $("#menuGmail").toggle();
+
+//Rede
+$("#btnMeuIp").click(()=>{
+    $("#menuProxy").hide();
+    $("#menuMeuIp").toggle();
 });
 
-$("#btnOutlook").click(()=>{
-    $("#menuBlock").hide();
-    $("#menuBol").hide();
-    $("#menuGmail").hide();
-    $("#menuYahoo").hide();
-    $("#menuOutlook").toggle();
+$("#btnProxy").click(()=>{
+    $("#menuMeuIp").hide();
+    $("#menuProxy").toggle();
+})
+//Youtube
+$("#btnVideoUm").click(()=>{
+    $("#menuVideoDois").hide();
+    $("#menuVideoUm").toggle();
 });
 
-$("#btnYahoo").click(()=>{
-    $("#menuBlock").hide();
-    $("#menuBol").hide();
-    $("#menuGmail").hide();
-    $("#menuOutlook").hide();
-    $("#menuYahoo").toggle();
+$("#btnVideoDois").click(()=>{
+    $("#menuVideoUm").hide();
+    $("#menuVideoDois").toggle();
+});
+
+//Abrir iframe nos vídeos
+$(".iframeVideo").click(()=>{
+    $("#section-video").toggle();
+})
+
+//GameQuiz
+
+$("#btnGameQuiz").click(()=>{
+    $("#menuQuiz").toggle();
 });
