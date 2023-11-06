@@ -9,6 +9,4 @@ function getRandomNumber(min, max) {
 
 function carregar(){
     const aleatorio = random(1, 5)
-
-
 }
