@@ -11,18 +11,18 @@
     <header></header>
     <main>
         <section id="plataforma">
-            <h1 id="pergunta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, cumque mollitia totam eum libero ratione quam adipisci ab corporis nihil nisi incidunt nobis eos, possimus aliquid perferendis tempore nam veniam.</h1>
-            <button class="option1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1 id="pergunta"></h1>
+            <button id="option1">
+                
             </button>
-            <button class="option2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <button id="option2">
+                
             </button>
-            <button class="option3">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <button id="option3">
+                
             </button>
-            <button class="option4">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <button id="option4">
+                
             </button>
         </section>
     </main>
