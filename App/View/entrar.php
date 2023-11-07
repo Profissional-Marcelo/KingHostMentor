@@ -50,7 +50,7 @@
             </div>
         </section>
     </main>
-    <script src="../js/entrar.js">
+    <script src="../../Assets/js/entrar.js">
         
     </script>
 </body>

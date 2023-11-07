@@ -16,7 +16,7 @@ body {
     background-color: lightcoral;
 }
 
-main > section#plataforma {
+main > section {
     margin-top: 10px;
     display: block;
     text-align: center;
@@ -57,6 +57,7 @@ footer > a {
 
 footer > a > img{
     width: 60px;
-    border-radius: 30px;
+    height: 60px;
+    border-radius: 200px;
     background-color: black;
 }
