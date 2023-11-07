@@ -8,6 +8,13 @@ body {
     padding: 0px;
 }
 
+.correto{
+    background-color: lightgreen;
+}
+
+.errado {
+    background-color: lightcoral;
+}
 
 main > section#plataforma {
     margin-top: 10px;
