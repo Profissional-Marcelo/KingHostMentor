@@ -140,7 +140,7 @@
             </ul>
         </menu>
         <span class="botoesInforme">
-            <a href="../../Assets/html/entrar.html" id="entrar">Entrar <span class="material-icons">person</span></a>
+            <a href="entrar.php" id="entrar">Entrar <span class="material-icons">person</span></a>
             <a href="#" id="registrar">Registrar</a>
         </span>
     </header>

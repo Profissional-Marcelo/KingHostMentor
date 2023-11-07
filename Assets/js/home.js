@@ -10,6 +10,8 @@ function clicar(){
     }
 }
 
+
+
 $("#btnDominio").click(()=>{
     $("#menuEmail").hide();
     $("#menuIntranet").hide();
