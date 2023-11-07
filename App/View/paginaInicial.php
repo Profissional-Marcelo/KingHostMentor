@@ -153,7 +153,7 @@
             
             <ul id="menuQuiz" class="">
                 <section class="container">
-                    <li><a href="../../Assets/html/gameQuiz.html"><img src="../../Assets/img/btnJogar.png" alt=""></a></li>
+                    <li><a href="gameQuiz.php"><img src="../../Assets/img/btnJogar.png" alt=""></a></li>
                     <li> <a href="#" target=""><img src="../../Assets/img/btnPlacar.png" alt=""></a></li>
                 </section>
             </ul>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/quiz.css" media="all">
-    <link rel="stylesheet" href="../css/quizMQ.css">
+    <link rel="stylesheet" href="../../Assets/css/quiz.css" media="all">
+    <link rel="stylesheet" href="../../Assets/css/quizMQ.css">
     <title>Host Mentor</title>
 </head>
 <body onload="carregar()">
@@ -27,8 +27,8 @@
         </section>
     </main>
     <footer>
-        <a href="../../App/View/paginaInicial.html"><img src="../img/gameQuiz/neonHome.png" alt=""></a>
+        <a href="paginaInicial.php"><img src="../../Assets/img/gameQuiz/neonHome.png" alt=""></a>
     </footer>
-    <script src="../js/quiz.js"></script>
+    <script src="../../Assets/js/quiz.js"></script>
 </body>
 </html>

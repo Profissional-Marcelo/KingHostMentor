@@ -7,21 +7,21 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="../css/entrar.css" media="all">
-    <link rel="stylesheet" href="../css/entrarMQ.css">
+    <link rel="stylesheet" href="../../Assets/css/entrar.css" media="all">
+    <link rel="stylesheet" href="../../Assets/css/entrarMQ.css">
 </head>
 <body>
     <header>
              <div class="container">
-                 <a href="../../App/View/paginaInicial.html"><img src="../img/back.png" alt="botão voltar" id="back"></a>
+                 <a href="paginaInicial.php"><img src="../../Assets/img/back.png" alt="botão voltar" id="back"></a>
                  <span id="burguer" class="material-icons">menu</span>
              </div>
            
             
             <menu class="janelaMenu" id="janelaMenuId">
                 <ul class="modal">
-                    <li><a href="../../App/View/paginaInicial.html">Voltar<span class="material-icons">home</span></a></li>
-                    <li><a href="cadastrar.html">Cadastrar<span class="material-icons">person</span></a></li>
+                    <li><a href="paginaInicial.php">Voltar<span class="material-icons">home</span></a></li>
+                    <li><a href="registro.php">Cadastrar<span class="material-icons">person</span></a></li>
                 </ul>
                 <p>Meus eternos agradecimentos por ter acompanhado esa página desde o começo!!!</p>
             </menu>
@@ -32,7 +32,7 @@
                 </div>
             <div id="formulario">
                 <h1>Faça login</h1>
-                <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta ou cadastre-se <a href="registro.html">aqui.</a></p>
+                <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta ou cadastre-se <a href="registro.php">aqui.</a></p>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
                         <span class="material-icons">person</span>
@@ -45,7 +45,7 @@
                         <label for="isenha">Senha</label>
                     </div>
                     <input type="submit" value="Entrar">
-                    <a href="recuperarSenha.html" class="botao">Esqueci a senha <span class="material-icons">mail</span></a>
+                    <a href="recuperarSenha.php" class="botao">Esqueci a senha <span class="material-icons">mail</span></a>
                 </form>
             </div>
         </section>
