@@ -44,11 +44,11 @@ function carregar() {
       op4.classList.add('correto');
     } 
     
-    setTimeout(gerarNovaPergunta, 1000);
+    setTimeout(gerarNovaPergunta, 2000);
   }
 
   function gerarNovaPergunta() {
-    let aleatorio = getRandomNumber(1, 2);
+    let aleatorio = getRandomNumber(1, 3);
     op1.classList.remove('correto', 'errado');
     op2.classList.remove('correto', 'errado');
     op3.classList.remove('correto', 'errado');
@@ -70,6 +70,14 @@ function carregar() {
         op3.innerHTML = "Serve para disparar e-mail quando uma situação específica for acionada por meio de uma API."
         op4.innerHTML = "Substitui o e-mail marketing"
         respostaCorreta = 3;
+        break;
+      case 3:
+        h1.innerHTML = "Após apontarmos os DNS na Registro BR, qual o período de propagação DNS, para que tudo comece a funcionar?"
+        op1.innerHTML = "Cerca de 24 horas"
+        op2.innerHTML = "Cerca de 48 horas"
+        op3.innerHTML = "Nada, é instantâneo"
+        op4.innerHTML = "Poucas HORAS"
+        respostaCorreta = 1;
         break;
     }
   }
