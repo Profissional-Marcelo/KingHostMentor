@@ -112,14 +112,16 @@
         width: 100vw;
     }
 
+    
+
     section#login {
         width: 990px;
         height: 500px;
     }
 
     img#back {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         margin: 30px;
     }
 
@@ -127,13 +129,15 @@
         display: block;
         padding: 30px;
         padding-top: 20px;
-        font-size: 80px;
+        font-size: 70px;
         cursor: pointer;
     }
 
     .completarMenu {
         width: 300px;
     }
+
+    
 
     menu { 
         width: 300px;

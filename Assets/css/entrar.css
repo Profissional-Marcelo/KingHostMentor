@@ -31,17 +31,21 @@ body,
 html {
     background-image: linear-gradient(to top, var(--verde), var(--lilas));
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 header {
-    position: absolute;
+    
     display: block;
     justify-content: space-between;
     width: 100vw;
-    z-index: 999;
+   height: 10vw;
+    
 }
 
 header > div.container {
+    position: relative;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -54,7 +58,7 @@ menu {
     border-top: none;
     width: 150px;
     position: relative;
-    height: 250px;
+    height: 76.7vh;
     z-index: 999;
     
 }
@@ -105,8 +109,7 @@ span#burguer {
 }
 
 main {
-
-    height: 100vh;
+   display: block;
     width: 98vw;
 }
 
@@ -128,7 +131,7 @@ section#login {
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
     
