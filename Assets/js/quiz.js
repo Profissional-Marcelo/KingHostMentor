@@ -44,7 +44,7 @@ function carregar() {
       op4.classList.add('correto');
     } 
     
-    setTimeout(gerarNovaPergunta, 2000);
+    setTimeout(gerarNovaPergunta, 1500);
   }
 
   function gerarNovaPergunta() {
