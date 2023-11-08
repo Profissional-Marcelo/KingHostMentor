@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    header {
+        height: 60px;
+  
+    }
+
+    header > span#burguer {
+       font-size: 60px;   
+    }
+
+    header > span.botoesInforme {
+        padding: 10px 30px 0px 10px;
+    }
+
+    header > span.botoesInforme > a {
+       font-size: 2em;
+    }
+
+    header > span.botoesInforme > a > span {
+        top: 10%;     
+    }
+
+    header > menu {
+        width: 30vw;
+        top: 77px;
+    }
+    
+    header > menu > ul > li > ul > li > button, header > menu > ul > li > ul > li > a {
+
+        font-size: 20px;
+
+    } 
+
+    header > menu > ul > li > ul > li > ul > li > a{
+        text-decoration: none;
+        font-size: 18px;
+    } 
+
+    header > menu > ul > li > ul > li > ul > li > a:hover{
+        text-decoration: underline;
+    }
+
+
+    header > menu > ul > li > button {
+        font-size: 22px;
+        height: 60px;
+    }
+    
+
+    main > section#section-iframe{
+        width: 90%;
+        left: 40%;
+        transform: translateX(-43%);
+    }
+    
+    main > section#section-iframe > iframe {
+        background: white url(../img/logoHM.png) center center no-repeat local;
+        background-color: rgb(229, 202, 255);  
+    } 
+
+    main > button > img.console {
+        bottom: 25px;
+        right: 25px;
+        width: 100px;
+    }
+
+    main >  button {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    main > section > ul#menuQuiz {
+        top: 44%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main > section > ul > section.container{
+        width: 70vw;
+    }
+
+    main > section > ul > section.container > li > a > img {
+        width: 250px;
+        
+    }
+
+}

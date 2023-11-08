@@ -121,5 +121,11 @@ $(".iframeVideo").click(()=>{
 //GameQuiz
 
 $("#btnGameQuiz").click(()=>{
+    $("header").toggleClass("aplicarBlur")
+    $("#section-iframe").toggleClass("aplicarBlur")
+    $("#section-video").toggleClass("aplicarBlur")
+    $("#section-passos").toggleClass("aplicarBlur")
+    $("#section-mapa").toggleClass("aplicarBlur")
     $("#menuQuiz").toggle();
+
 });

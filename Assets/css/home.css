@@ -23,7 +23,7 @@ body {
 }
 
 .aplicarBlur {
-    filter: blur(4px);
+    filter: blur(10px);
 }
 
 header {
@@ -67,6 +67,7 @@ header > span.botoesInforme > a#entrar {
 header > span#burguer {
     color: white;
     font-size: 40px;
+    cursor: pointer;
 }
 
 header > menu {
@@ -75,6 +76,7 @@ header > menu {
     z-index: 1;
     width: 50vw;
     top: 60px;
+    cursor: pointer;
 }
 
 
@@ -101,6 +103,7 @@ header > menu > ul > li > button {
     border: 1px solid var(--colorGreen);
     border-bottom: 0px;
     padding: 10px;
+    cursor: pointer;
 }
 
 header > menu > ul > li > ul {
@@ -178,7 +181,6 @@ main > section > ul#menuQuiz {
     display: none;
     position: fixed;
     top: 40%;
-    width: 50px;
     height: 75px;
     z-index: 1;
     list-style: none;
@@ -186,7 +188,7 @@ main > section > ul#menuQuiz {
 
 main > section > ul > section.container{
     display: flex;
-    width: 100%;
+    width: 98vw;
     height: 100%;
     justify-content: space-between;
     align-items: center;
@@ -233,6 +235,7 @@ main >  button {
     bottom: 20px;
     right: 20px;
     z-index: 2;
+    cursor: pointer;
 }
 
 main > button > img.console:hover {
