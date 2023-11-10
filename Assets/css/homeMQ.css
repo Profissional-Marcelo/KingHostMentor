@@ -20,7 +20,8 @@
     }
 
     header > span.botoesInforme > a > span {
-        top: 10%;     
+        font-size: 1em;
+        top: 11%;     
     }
 
     header > menu {
@@ -87,4 +88,100 @@
         
     }
 
+}
+
+@media screen and (min-width: 1026px){
+
+    header {
+        display: block;
+        height: 60px;
+    }
+
+    header > span.botoesInforme {
+        display: block;
+        text-align: end;
+        padding: 5px 0px 0px 5px;
+        margin-top: 5px;
+        margin-right: 15%;
+    }
+
+    header > span.botoesInforme > a {
+        
+       font-size: 2em;
+    }
+
+    header > span.botoesInforme > a > span {
+        font-size: 1em;
+        transform: translateY(5px);    
+    }
+
+    header > menu {
+        width: 30vw;
+        top: 80px;
+    }
+    
+
+    header > span#burguer {
+        display: none;
+    }
+
+    header > menu {
+        display: block;
+        width: 16%;
+    }
+
+    header > menu > ul > li > button {
+        font-size: 20px;
+        padding: 20px 0px 40px 0px;
+    }
+
+    header > menu > ul > li > ul > li > button, header > menu > ul > li > ul > li > a {
+        
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    } 
+
+    main > section#section-iframe{
+        border-bottom: 4px solid var(--bgHover);
+        position: relative;
+        margin: 0px auto 0px auto;
+    }
+
+    main > section#section-iframe > iframe {
+        background: white url(../img/logoHM.png) center center no-repeat local;
+        background-color: rgb(229, 202, 255);  
+    } 
+    
+    main > section#section-iframe{
+        width: 70%;
+        left: 29.3%;
+        transform: translateX(-40%);
+    }
+
+    main > button > img.console {
+        bottom: 35px;
+        right: 35px;
+        width: 100px;
+    }
+
+    main >  button {
+        bottom: 50px;
+        right: 50px;
+    }
+
+    main > section > ul#menuQuiz {
+        top: 44%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main > section > ul > section.container{
+        width: 40vw;
+    }
+
+    main > section > ul > section.container > li > a > img {
+        width: 250px;
+        
+    }
 }
