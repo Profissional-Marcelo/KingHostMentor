@@ -33,10 +33,10 @@
             <div id="formulario">
                 <h1>Faça login</h1>
                 <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta ou cadastre-se <a href="registro.php">aqui.</a></p>
-                <form action="login.php" method="post" autocomplete="on">
+                <form action="../Controller/login.php" method="post" autocomplete="on">
                     <div class="campo">
                         <span class="material-icons">person</span>
-                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+                        <input type="email" name="email" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
                         <label for="ilogin">Login</label>
                     </div>
                     <div class="campo">
